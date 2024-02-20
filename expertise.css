@@ -1,0 +1,256 @@
+
+body{background-color: rgba(0, 0, 0, 0.045);
+
+}
+
+
+
+    #h1-expertise-top-line  {
+      background: linear-gradient(45deg,rgb(10, 133, 102),rgba(0, 0, 255, 0.578));
+      background-clip: text;
+      -webkit-background-clip: text; /* For WebKit/Blink browsers */
+      color: transparent;
+      padding: 8px;
+      cursor: pointer;
+      margin:10% auto 0% ;
+      text-align: center;
+      width: fit-content;
+  }
+  
+
+
+    #our-expertise-section {
+      background-color: rgba(0, 0, 0, 0.010);
+  }
+  
+  #security-and-consultancy {
+  
+      display: flex;
+      gap: 10px;
+  margin-top: 20px;
+    }
+  
+  #text-media-1,
+  #text-media-2{
+     
+      display: flex; /* Make #text-media a flex container */
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+ 
+      
+  }
+
+
+  #text-media-1{
+    border-radius: 8px;
+    background-image: url(secure.png);background-position: center;background-size: cover;max-width: 50%;}
+  #text-media-2{
+    border-radius: 8px;
+    background-image: url(consultancy.jpg);background-position: center;background-size: cover;max-width: 50%;}
+
+
+  #text-media-1 p, 
+  #text-media-2 p
+  {background-color: rgba(0, 0, 0, 0.842);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+  left: 0;
+  bottom: -80%;
+  transition: 0.5s ease-in-out;
+  padding: 20px;
+  line-height: 1.7;
+
+  transition: 0.5s ease-out;
+  }
+
+
+  #text-media-1:hover p,
+  #text-media-2:hover p
+  {bottom:0;background-color: rgba(12, 72, 161, 0.815);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+      #introduction-expertise{
+          padding: 4rem;
+          font-size: 1.4rem;
+          font-weight: 500;
+         
+          max-width: 85%;
+          border-radius: 10px;
+          margin: 3rem auto;
+          cursor: pointer;
+          background-color: rgb(241, 241, 241);
+   
+   color: black;
+   
+   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.497);
+    }
+  
+
+    #introduction-expertise:hover{
+
+        
+    box-shadow: 8px 8px 10px rgba(30, 0, 255, 0.497);
+   
+    }
+
+  
+  #h-6{width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 88%;
+    font-size: 1rem;
+    border-radius: 8px;
+   color: aliceblue;
+   border: 3px solid black;
+    background:linear-gradient(to right, rgb(85, 5, 122) ,rgb(5, 184, 172));
+}
+  
+  
+  
+  
+  
+  
+  
+  
+      #last-div-box{
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+      padding:2rem 4rem;
+      padding-bottom: 50px;
+      margin: 4rem 0rem;
+      background-color: rgba(234, 234, 234, 0.797);
+    }
+  
+  
+      #last-div-box div{
+        
+        
+
+        background: linear-gradient(90deg, rgba(65,0,255,1) 7%, rgb(93, 110, 245) 100%);
+  
+        color: white;
+  border-radius: 8px;
+  
+  
+  text-align: center;
+      width: 10rem;
+    height:10rem;  
+  
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.497);
+    }
+  
+  
+    #last-div-box div:hover{
+      color:black;
+      cursor: pointer;
+      
+      background: rgba(255, 255, 255, 0.407);
+      box-shadow: 4px 4px 6px rgba(0, 0, 255, 0.497);
+    
+      
+    }
+  
+
+
+    
+  
+
+    @media (max-width:800px) 
+    
+    {
+    
+
+      #security-and-consultancy{flex-wrap: wrap;}
+      
+      #text-media-1, 
+      #text-media-2{
+        max-width: 100%;
+      }
+
+    }
+  
+
+
+
+    @media (min-width:250px) and (max-width:400px)  {
+      
+
+        #h1-expertise-top-line{margin-top: 14rem;
+            font-weight: 400;
+            font-size: 1.6rem;}
+
+  
+        #introduction-expertise{padding: 10px;font-size: 0.8rem;
+        max-width: 90%;
+        }
+        
+        #h-6{font-size: 0.8rem;font-weight: 400;}
+
+
+        #last-div-box{padding: 2rem 0.6rem;}
+
+        #last-div-box div{width: 6rem;font-size: 12px;
+            
+            padding: 0;}
+    }
+    
+    @media (min-width:401px) and (max-width:800px)  {
+        #h1-expertise-top-line{margin-top: 10.2rem;font-weight: 400;font-size: 1.6rem;}
+        
+
+    
+     
+        #introduction-expertise{padding: 10px;font-size: 0.8rem;
+        max-width: 90%;
+        }
+        
+        #h-6{font-size: 0.8rem;font-weight: 400;}
+
+
+        #last-div-box{padding: 1rem 0.6rem;}
+    }
+    @media (min-width:801px) and (max-width:1000px)  {
+        #h1-expertise-top-line{margin-top: 10.2rem;font-weight: 400;font-size: 1.6rem;}
+       
+
+    
+     
+        #introduction-expertise{padding: 10px;font-size: 0.8rem;
+        max-width: 90%;
+        }
+        
+        #h-6{font-size: 0.8rem;font-weight: 400;}
+
+
+        #last-div-box{padding: 1rem 0.6rem;}
+    }
+    
+
+
+
+
+
+

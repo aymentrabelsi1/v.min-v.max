@@ -1,0 +1,272 @@
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for browsers that support it */
+}
+
+
+#our-services{margin-top: 8%;
+  text-align: center;
+  padding: 2%;
+ 
+
+background-color: rgb(240, 240, 240);
+}
+
+#container{
+display: flex;
+flex-wrap: wrap;
+padding:1px;
+gap: 2px;
+background-color: rgb(234, 234, 234);
+justify-content: center;
+
+
+}
+
+#our-services button{
+  background-color: rgba(10, 57, 158, 0.837);
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  width: 50%;
+  max-width: 50%;
+  box-shadow: 2px 0px 4px black;
+}
+
+#our-services button:hover{
+  background-color: rgba(50, 104, 220, 0.837);
+}
+
+
+
+
+
+
+#image-box {
+  /* flex-grow: 1; */
+  position: relative;
+ 
+  
+  color: white; /* Set text color */
+  
+width: 24vw;
+  cursor: pointer;
+
+
+
+  overflow: hidden;
+  
+  
+   
+}
+
+
+
+
+  #image-box img {
+    width: 100%; 
+    height: 100%;
+    display: block;
+    transition: 0.5s ease-in-out;
+    
+  }
+
+  #image-box:hover img{ scale: 1.2;}
+
+
+
+
+
+  #image-box{
+    animation: fade-in linear forwards;    
+    border-radius: 4px;
+    overflow: hidden;
+
+    animation: fade-in linear;
+    animation-timeline: view();
+  
+    animation-range-start:cover ;
+    animation-range-end:contain ;
+}
+
+
+    @keyframes fade-in {
+    from {scale:0.9; opacity: 0.9;}
+    to {scale:1; opacity: 1;}
+
+    
+      
+    }
+
+
+
+  
+    #image-box p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      margin: 0 auto;
+      font-family: system-ui,  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+      justify-content: center;
+      align-items: center;
+      
+      background-color: rgba(0, 0, 0, 0.777);
+      width: 100%;
+      height: 100%;
+      font-size: 1.4vw;
+      line-height: 2.6vw;
+  color: rgba(255, 255, 255, 0.737);  
+  transition: 0.6s ease-in-out;
+  text-align: center;
+  
+
+ 
+  }
+
+
+#image-box:hover p{left: -100%;
+    background-color: rgba(0, 0, 0, 0.145);}
+
+
+    #image-box h3{position: absolute;
+      color: rgb(47, 132, 21);
+      z-index: 1111111;top: 86%;
+  
+      font-size: 1.3vw;
+      text-align: center;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.8s ease-in-out;
+  
+  }
+
+    #image-box:hover h3{color: white;
+background-color: black;
+border-radius: 6px;
+
+transition: 0.4s ease;
+
+}
+  
+
+
+
+  
+
+
+
+
+
+
+#welcome{text-align: center;margin-top: 4%;}
+
+
+
+
+#section-container {margin-top: 100px;
+display: flex;flex-wrap: wrap;
+gap: 10px;
+
+}
+
+#section-container .section{
+  padding: 4%;
+  background-color: rgba(88, 87, 87, 0.366);
+  background:  linear-gradient(to right , rgb(6, 178, 158) 0%, rgba(7, 78, 125, 0.83) 98%);
+  margin: 0 30px;
+line-height: 1.6;
+border: 1px solid transparent;
+border-radius: 4px;
+scroll-snap-align: start;
+flex-grow: 1;
+}
+
+#section-container .section:hover{border: 1px solid blue;}
+
+#section-container .section:hover h1{color: rgb(255, 255, 255);}
+
+
+  #section-container h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 1.2rem;font-weight: 300;
+  
+  color: black;}
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+  #footer-div{position: relative ;bottom: 0;
+    padding: 40px 10px;
+text-align: center;
+  color: white;
+  background-color: rgb(28, 28, 28);
+  }
+
+
+  #footer-div i{color: white;font-size: 1.6rem;
+  margin: 10px;
+cursor: pointer;  
+}
+
+#footer-div a{color: transparent;}
+
+  #footer-div i:hover{transform: translateY(-4px);}
+
+  @media (min-width:250px) and (max-width:1000px)  
+   {
+    
+    #section-container .section{margin: 0 8px;}
+    #our-services{margin-top: 10rem;}
+
+  }
+
+
+
+
+
+  @media (min-width:250px) and (max-width:370px) 
+  {
+
+   
+    
+    #our-services button{font-size: 0.6rem;margin: 20px 0px;
+      padding: 10px;width: fit-content;}
+  }
+
+
+
+  
+
+  @media (max-width:700px) 
+  {
+    #image-box{width: 30vw;flex-grow: 1;}
+    #image-box p{font-size: 2vw;line-height: 1.8;}
+    #image-box h3{font-size: 1.8vw;}
+    #container{gap: 0.1px;}
+
+
+  }
+
+  @media (max-width:400px) 
+  {
+    #image-box{
+      flex-grow: 1;
+      /* width: 42vw; */
+    }
+  }

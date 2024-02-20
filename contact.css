@@ -1,0 +1,129 @@
+
+
+#contact-bannerr{margin-top: 6rem;
+
+position: relative;
+
+height: 34vw;
+
+
+
+}
+
+#contact-bannerr img{
+  position: relative;
+  width: 100%;height: 100%;}
+
+
+#contact-bannerr::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.725);}
+
+
+#contact-design{background-color: rgba(237, 237, 243, 0.797);margin-top: 0.2%;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 2rem 1rem;
+display: flex;gap: 0.8rem;}
+
+
+
+
+
+#contact-design div{background-color: rgba(255, 255, 255, 0.851);
+
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-grow: 1;
+border-radius: 8px;
+align-items: center;
+min-width: 16vw;min-height:8vw;
+cursor: pointer;
+box-shadow: 0px 4px 10px ;
+
+padding: 1em;
+
+
+}
+
+#contact-design div:hover{box-shadow: 0px 0px 2px rgb(6, 17, 92);}
+
+
+#contact-design div i{font-size:2rem;cursor: pointer;}
+
+#contact-design div i:hover{transform: translate(0%,-20%);}
+
+
+
+
+#my-form{display: flex;
+    align-items: center;
+    padding-bottom: 70px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+    #my-form h1 {text-align: center;}
+
+
+
+    form {
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 1px;
+      }
+      form:hover{box-shadow: 0px 0px 4px rgb(3, 12, 85)}
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      button {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #2980b9;
+      }
+
+
+
+
+      @media (min-width:250px) and (max-width:360px)
+      {#contact-bannerr{height: 20rem;margin-top: 8rem;}
+      #contact-bannerr img{object-fit: cover;}
+      }
+
+
+      @media (min-width:361px) and (max-width:600px)
+      {#contact-bannerr{height: 20rem;margin-top: 4rem;}
+      #contact-bannerr img{object-fit: cover;}
+      }
